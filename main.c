@@ -1,7 +1,13 @@
 #include <stdio.h>
- 
-int main()
+#include "bool.h"
+#include "graph.h"
+
+int main(void)
 {
-  printf("Hello world\n");
-  return 0;
+    graph g;
+	int i;
+
+	read_graph(&g,TRUE);
+	print_graph(&g);
+    return 0;
 }
