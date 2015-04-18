@@ -29,13 +29,12 @@ http://www.amazon.com/exec/obidos/ASIN/0387001638/thealgorithmrepo/
 #include "bool.h"
 #include "graph.h"
 #include "stack.h"
+ bool processed[];	/* which vertices have been processed */
+ bool discovered[];	/* which vertices have been found */
+ int parent[];		/* discovery relation */
 
-extern bool processed[];	/* which vertices have been processed */
-extern bool discovered[];	/* which vertices have been found */
-extern int parent[];		/* discovery relation */
-
-extern int entry_time[];	/* time of vertex entry */
-extern int exit_time[];		/* time of vertex exit */
+ int entry_time[];	/* time of vertex entry */
+ int exit_time[];		/* time of vertex exit */
 
 int low[MAXV+1];		/* oldest vertex surely in component of v */
 int scc[MAXV+1];		/* strong component number for each vertex */
