@@ -127,4 +127,3 @@ print_graph(graph *g)
 		printf("\n");
 	}
 }
-
